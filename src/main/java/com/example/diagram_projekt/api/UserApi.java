@@ -19,7 +19,6 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class UserApi {
     private final AuthService authService;
-    private final UserRepository userRepository;
 
     @PostMapping("save")
     public UserResponse save(@RequestParam String name,

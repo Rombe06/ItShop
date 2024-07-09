@@ -11,15 +11,15 @@ import javax.persistence.*;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Produkt {
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nameprodukt;
-    private String opisaniye;
+    private String nameProduct;
+    private String description;
     private String image;
     private int price;
-    private String nalichii;
+    private boolean availability;
     @OneToOne
     @JoinColumn(name = "riviev_id")
     private Reviev reviev;

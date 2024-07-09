@@ -16,5 +16,5 @@ public class Reviev {
     private Long id;
     private String reviev;
     @OneToOne(mappedBy = "reviev", cascade = CascadeType.ALL)
-    private Produkt produkt;
+    private Product product;
 }

@@ -17,7 +17,7 @@ public class Question {
     private Long id;
     private String vopros;
     @OneToOne(mappedBy = "question", cascade = CascadeType.ALL)
-    private Produkt produkt;
+    private Product product;
     @OneToOne(mappedBy = "question", cascade = CascadeType.ALL)
     private Answer answer;
 }
