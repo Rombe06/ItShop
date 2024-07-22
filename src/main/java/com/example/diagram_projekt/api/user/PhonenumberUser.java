@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("api/v1/PhoneNumber/user")
-public class PhoneNumberUser {
+public class PhonenumberUser {
 }

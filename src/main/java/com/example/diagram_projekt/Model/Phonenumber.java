@@ -14,7 +14,7 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PhoneNumber {
+public class Phonenumber {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

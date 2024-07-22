@@ -20,7 +20,7 @@ public class Registration {
     private Long id;
     private String lastname;
     private String firstname;
-    private String sevices;
+    private String services;
     private String oblast;
     private int phonenumber;
 }
