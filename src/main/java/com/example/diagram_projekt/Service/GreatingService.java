@@ -22,10 +22,8 @@ public class GreatingService {
 //        return map(greatingRepository.save(greating));
 //    }
     public GreatingResponse update(String welcome) {
-        Greating greating = new Greating();
+        Greating greating = greatingRepository.findById(1L).get();
         greating.setWelcome(welcome);
-
-
         return map(greatingRepository.save(greating));
     }
 
