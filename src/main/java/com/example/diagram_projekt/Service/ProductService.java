@@ -1,7 +1,7 @@
 package com.example.diagram_projekt.Service;
 
 import com.example.diagram_projekt.Model.Product;
-import com.example.diagram_projekt.Repasytory.ProduktRepository;
+import com.example.diagram_projekt.Repasytory.ProductRepository;
 import com.example.diagram_projekt.dto.response.ProductResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class ProductService {
-    private final ProduktRepository produktRepository;
+    private final ProductRepository productRepository;
 
     public ProductResponse save(
             String nameProduct,
@@ -26,17 +26,17 @@ public class ProductService {
         product.setPrice(price);
         product.setImage(image);
         product.setAvailability(availability);
-        return map(produktRepository.save(product));
+        return map(productRepository.save(product));
 
     }
 
     public ProductResponse findById(Long id) {
-        return map(produktRepository.findById(id).orElseThrow());
+        return map(productRepository.findById(id).orElseThrow());
     }
 
     public List<ProductResponse> findAll() {
         List<ProductResponse> list = new ArrayList<>();
-        produktRepository.findAll().forEach(
+        productRepository.findAll().forEach(
                 a -> {
                     list.add(map(a));
                 }
@@ -45,7 +45,7 @@ public class ProductService {
     }
 
     public String deleteById(Long id) {
-        produktRepository.deleteById(id);
+        productRepository.deleteById(id);
         return "deleted";
     }
 

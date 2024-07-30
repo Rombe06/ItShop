@@ -19,6 +19,6 @@ public class Backcall {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private int number;
+    private String  number;
     private String oblast;
 }
