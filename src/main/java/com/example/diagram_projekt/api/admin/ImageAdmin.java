@@ -15,8 +15,8 @@ import java.util.List;
 //@PreAuthorize("hasAnyRole('ADMIN')")
 public class ImageAdmin {
     private final ImageService imageService;
-    @PostMapping("save")
-    public ImageResponse save(@PathVariable String image){
+    @PostMapping("/save/{image}")
+    public ImageResponse save(@PathVariable("image") String image){
         return imageService.save(image);
     }
     @GetMapping("findBy/{id}")
