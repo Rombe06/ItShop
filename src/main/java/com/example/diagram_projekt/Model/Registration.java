@@ -22,5 +22,5 @@ public class Registration {
     private String firstname;
     private String services;
     private String oblast;
-    private int phonenumber;
+    private String phonenumber;
 }

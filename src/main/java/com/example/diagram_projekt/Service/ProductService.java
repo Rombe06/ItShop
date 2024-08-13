@@ -18,7 +18,7 @@ public class ProductService {
             String nameProduct,
             String description,
             String image,
-            int price,
+            String  price,
             boolean availability) {
         Product product = new Product();
         product.setNameProduct(nameProduct);

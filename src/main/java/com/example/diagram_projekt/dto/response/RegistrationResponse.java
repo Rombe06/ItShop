@@ -9,11 +9,12 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProductResponse {
+public class RegistrationResponse {
     private Long id;
-    private String nameProduct;
-    private String opisaniye;
-    private String image;
-    private String  price;
-    private boolean nalichii;
+
+    private String lastname;
+    private String firstname;
+    private String services;
+    private String oblast;
+    private String phonenumber;
 }

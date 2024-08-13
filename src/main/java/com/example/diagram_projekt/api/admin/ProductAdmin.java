@@ -19,7 +19,7 @@ public class ProductAdmin {
             @RequestParam String nameProduct,
             @RequestParam String description,
             @RequestParam String image,
-            @RequestParam int price,
+            @RequestParam String price,
             @RequestParam boolean availability
     ){return productService.save(nameProduct, description,image,price,availability);}
 

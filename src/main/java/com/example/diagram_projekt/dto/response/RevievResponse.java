@@ -9,11 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProductResponse {
+public class RevievResponse {
     private Long id;
-    private String nameProduct;
-    private String opisaniye;
-    private String image;
-    private String  price;
-    private boolean nalichii;
+    private String otziv;
 }

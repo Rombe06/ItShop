@@ -18,7 +18,7 @@ public class Product {
     private String nameProduct;
     private String description;
     private String image;
-    private int price;
+    private String  price;
     private boolean availability;
     @OneToOne
     @JoinColumn(name = "riviev_id")

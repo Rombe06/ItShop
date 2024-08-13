@@ -14,7 +14,7 @@ public class Reviev {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String reviev;
+    private String otziv;
     @OneToOne(mappedBy = "reviev", cascade = CascadeType.ALL)
     private Product product;
 }
